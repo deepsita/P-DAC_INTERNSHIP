@@ -7,7 +7,7 @@ For whole design, we will use 1172 transistors.
 However, the FSV is same  as the conventional DAC.
 So, the proposed design could be an efficient alternative for Higher bit DACs.
 
-The complete design of the proposed DAC is given in the proposed_dac.pdf{https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/proposed_dac.pdf}
+The complete design of the proposed DAC is given in the proposed_dac.pdf {https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/proposed_dac.pdf}
 
 
 # Contributions
