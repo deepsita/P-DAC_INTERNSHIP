@@ -10,6 +10,6 @@ So, the proposed design could be an efficient alternative for Higher bit DACs.
 The complete design of the proposed DAC is given in the proposed_dac.pdf {https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/proposed_dac.pdf}
 
 
-# Contributions
-Shalini Kanna - kannashalini97@gmail.com
+# Contributors
 Skandha Deepsita - skandha.deepsita5@gmail.com
+Shalini Kanna - kannashalini97@gmail.com
