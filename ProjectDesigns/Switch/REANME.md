@@ -1,1 +1,0 @@
-*AND Gate Design
