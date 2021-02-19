@@ -1,0 +1,53 @@
+.lib "/sky130_fd_pr/models/custom.spice"
+
+**.subckt combined_ckt Bit_1 Bit_3 Bit_2 Bit_4 Bit_5 inv_CS_out CS_out Switch_in Switch_out CS
+*+ inv_CS
+*.ipin Bit_1
+*.ipin Bit_3
+*.ipin Bit_2
+*.ipin Bit_4
+*.ipin Bit_5
+*.iopin inv_CS_out
+*.iopin CS_out
+*.iopin Switch_in
+*.iopin Switch_out
+*.ipin CS
+*.ipin inv_CS
+XM1 inv_CS_out Bit_5 net1 net1 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM2 net1 Bit_4 net2 net2 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM3 net2 Bit_3 net3 net3 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM4 net3 Bit_2 net4 net4 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM5 net4 Bit_1 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM6 inv_CS_out Bit_3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM7 inv_CS_out Bit_2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM8 inv_CS_out Bit_1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM9 inv_CS_out Bit_4 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM10 inv_CS_out Bit_5 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM11 CS_out inv_CS_out 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM12 CS_out inv_CS_out VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+
+XM13 Switch_in CS_out Switch_out Switch_out sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM14 Switch_out inv_CS_out Switch_in Switch_in sky130_fd_pr__pfet_01v8 L=0.15 W=1
+XM15 Switch_out inv_CS_out 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1
+
+
+V1 Bit_1 0 PWL 0 0 1000n 0 1001n 1.8 2u 1.8
+V2 Bit_2 0 PWL 0 0 500n 0 501n 1.8 1000n 1.8 1001n 0 1500n 0 1501n 1.8 2000n 1.8
+V3 Bit_3 0 PWL 0 0 250n 0 251n 1.8 500n 1.8 501n 0 750n 0 751n 1.8 1000n 1.8 1001n 0 1250n 0 1251n 1.8 2000n 1.8
+V4 Bit_4 0 PWL 0 0 125n 0 126n 1.8 250n 1.8 251n 0 375n 0 376n 1.8 500n 1.8 501n 0 1u 0 1001n 1.8 2000n 1.8
+V5 Bit_5 0 PWL 0 0 64n 0 65n 1.8 125n 1.8 126n 0 189n 0 190n 1.8 250n 1.8 251n 0 400n 0 401n 1.8 2000 1.8
+V6 Switch_in 0 PWL 0 0 200n 0 201n 1.8 400n 1.8 401n 0 600n 0 601n 1.8 800n 1.8 801n 0 1000n 0 1001n 1.8 1200n 1.8 1201n 0 1400n 0 1401n 1.8 1600n 1.8 1601n 0 1800n 0 1801n 1.8 2000n 1.8
+Vdd VDD 0 dc 1.8V
+**.ends
+
+
+.tran 0.1n 2u
+.control
+run 
+plot Bit_5 Bit_4 Bit_3 Bit_2 Bit_1 
+plot CS_out inv_CS_out
+plot Switch_in 
+plot Switch_out
+.endc
+.end
+
