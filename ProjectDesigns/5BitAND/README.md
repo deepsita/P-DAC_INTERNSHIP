@@ -1,1 +1,1 @@
-5Bit AND gate Designs and spiece along with output graphs
+5Bit AND gate Designs and spice along with output graphs
