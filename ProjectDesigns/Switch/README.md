@@ -1,1 +1,1 @@
-Switch Design with its simUlation design, Spice files and output waveforms 
+Switch Design with its simulation design, Spice files and output waveforms 
