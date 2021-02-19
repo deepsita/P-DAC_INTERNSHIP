@@ -1,0 +1,26 @@
+.lib "/sky130_fd_pr/models/custom.spice"
+
+**.subckt Switch Switch_in Switch_out CS inv_CS GND
+*.iopin Switch_in
+*.iopin Switch_out
+*.ipin CS
+*.ipin inv_CS
+*.iopin GND
+V1 CS 0 PWL 0 0 1000n 0 1001n 1.8 2u 1.8
+V2 inv_CS 0 PWL 0 0 500n 0 501n 1.8 1000n 1.8 1001n 0 1500n 0 1501n 1.8 2000n 1.8
+V3 Switch_in 0 PWL 0 0 200n 0 201n 3.3 400n 3.3 401n 0 600n 0 601n 3.3 800n 3.3 801n 0 1000n 0 1001n 3.3 1200n 3.3 1201n 0 1400n 0 1401n 3.3 1600n 3.3 1601n 0 1800n 0 1801n 3.3 2000n 3.3
+
+XM1 Switch_in CS Switch_out Switch_out sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM2 Switch_out inv_CS Switch_in Switch_in sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM5 Switch_out inv_CS 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+**.ends
+
+.tran 0.1n 2u
+.control
+run 
+plot CS inv_CS
+plot Switch_in 
+plot Switch_out
+.endc
+.end
+
