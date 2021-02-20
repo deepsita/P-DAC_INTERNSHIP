@@ -13,3 +13,4 @@ The complete design of the proposed DAC is given in the proposed_dac.pdf {https:
 # Contributors
 Skandha Deepsita - skandha.deepsita5@gmail.com
 Shalini Kanna - kannashalini97@gmail.com
+Harshitha Basavaraju - harshithab0707@gmail.com
