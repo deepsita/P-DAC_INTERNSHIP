@@ -12,7 +12,7 @@ So, the proposed design could be an efficient alternative for Higher bit DACs.
 The complete design of the proposed DAC is given in the proposed_dac.pdf {https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/proposed_dac.pdf}
 
 
-## Conventional Implementation of 10Bit Potentiometric DAC
+## Conventional Implementation of 10Bit Potentiometeric DAC
 Switch Implementation, Design and waveform are shown bellow
 ![Switch Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/switch.PNG)
 
