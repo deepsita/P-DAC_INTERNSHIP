@@ -68,20 +68,23 @@ Switch Implementation, Design and waveform are shown bellow
 ![8Bit DAC Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/8bitdac_sch.PNG)
 
 ![8Bit DAC WaveForm](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/8bitdac_wave.PNG)
+The ngspice gives a message killed after searching for the models for long hours. To mitigate this new model files were used so that only the model files that are required can be used. The simulation takes 4 hours for the completion.
 
 
 
 9Bit DAC Implementation using 8Bit instances, Design shown bellow (Waveform - Simulations are taking time)
 
 ![9Bit DAC Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/9bit_sch.PNG)
-
+The ngspice gives a message killed after searching for the models for long hours. To mitigate this new model files were used so that only the model files that are required can be used. However, the ngspice is getting killed.
 
 
 10Bit DAC Implementation using 9Bit instances, Design shown bellow (Waveform - Simulations are taking time)
 
 ![10Bit DAC Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/10bitdac_sch.PNG)
+The ngspice gives a message killed after searching for the models for long hours. To mitigate this new model files were used so that only the model files that are required can be used. However, the ngspice is getting killed while it searches for the the model file.
 
 
+Every block of the circuit until 8 bit DAC are tested and spice models until 10 bit dac are included are in the folder spicefiles.
 
 ## Future Works
 Conventional 9Bit and 10Bit simulations will be updated.
