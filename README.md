@@ -14,7 +14,7 @@ The complete design of the proposed DAC is given in the proposed_dac.pdf {https:
 
 ## Conventional Implementation of 10Bit Potentiometric DAC
 Switch Implementation, Design and waveform are shown bellow
-
+![Switch Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/switch.PNG)
 
 2Bit DAC Implementation using Switch instances, Design and waveform are shown bellow
 
