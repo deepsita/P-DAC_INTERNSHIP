@@ -44,7 +44,7 @@ Applications of a DAC: audio amplifier, video encoder, display electronics, data
 |OUT	|14	|O	|DAC analog voltage output|
 |VDDA	|15	|I	|Analog voltage supply (3.3)|
 |VSSA	|16	|I	|Analog ground|
-|VREFH	|17	|I	|Reference voltage high for DAC|
+|VREFH	|17	|I	|Reference voltage high for DAC(3.3)|
 |VREFL	|18	|I	|Reference voltage low for DAC|
  
 ## 3.EDA tools used to implement Potentiometric DAC
