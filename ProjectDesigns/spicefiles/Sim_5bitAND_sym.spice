@@ -1,0 +1,54 @@
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+
+**.subckt Sim_5bitAND_sym inv_CS_out CS_out VDD GND
+*.iopin inv_CS_out
+*.iopin CS_out
+*.iopin VDD
+*.iopin GND
+
+V1 net1 0 PWL 0 0 1000n 0 1001n 1.8 2u 1.8
+V2 net2 0 PWL 0 0 500n 0 501n 1.8 1000n 1.8 1001n 0 1500n 0 1501n 1.8 2000n 1.8
+V3 net3 0 PWL 0 0 250n 0 251n 1.8 500n 1.8 501n 0 750n 0 751n 1.8 1000n 1.8 1001n 0 1250n 0 1251n 1.8 2000n 1.8
+V4 net4 0 PWL 0 0 125n 0 126n 1.8 250n 1.8 251n 0 375n 0 376n 1.8 500n 1.8 501n 0 1u 0 1001n 1.8 2000n 1.8
+V5 net5 0 PWL 0 0 64n 0 65n 1.8 125n 1.8 126n 0 189n 0 190n 1.8 250n 1.8 251n 0 400n 0 401n 1.8 2000 1.8
+Vdd VDD 0 dc 1.8V
+x1 VDD inv_CS_out net1 net2 CS_out net3 net4 net5 0 5bit_AND
+**.ends
+
+* expanding   symbol:  /home/shalini1234/Project/5bit_AND.sym # of pins=9
+
+.subckt 5bit_AND  VDD inv_CS_out Bit_5 Bit_4 CS_out Bit_3 Bit_2 Bit_1 GND
+*.ipin Bit_1
+*.ipin Bit_3
+*.ipin Bit_2
+*.ipin Bit_4
+*.ipin Bit_5
+*.iopin inv_CS_out
+*.iopin CS_out
+*.iopin VDD
+*.iopin GND
+XM1 inv_CS_out Bit_5 net1 net1 sky130_fd_pr__nfet_01v8 L=0.15 W=1
+XM2 net1 Bit_4 net2 net2 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM3 net2 Bit_3 net3 net3 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM4 net3 Bit_2 net4 net4 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM5 net4 Bit_1 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM6 inv_CS_out Bit_3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM7 inv_CS_out Bit_2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1
+XM8 inv_CS_out Bit_1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1
+XM9 inv_CS_out Bit_4 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1
+XM10 inv_CS_out Bit_5 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM11 CS_out inv_CS_out 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM12 CS_out inv_CS_out VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+.ends
+
+
+.tran 0.1n 2u
+.control
+run 
+plot net5 net4 net3 net2 net1 
+plot inv_CS_out CS_out
+plot Vdd
+.endc
+.end
+
+ 

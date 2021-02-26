@@ -1,0 +1,342 @@
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+**.subckt 10Bit_DAC_design
+x1 VDD net1 b9 b8 net2 b7 b6 b5 0 5bit_AND
+x3 VDD net5 b9 b8 net6 b7 nb6 b5 0 5bit_AND
+x4 VDD net7 b9 b8 net8 b7 nb6 nb5 0 5bit_AND
+x5 VDD net9 b9 b8 net10 nb7 b6 b5 0 5bit_AND
+x6 VDD net11 b9 b8 net12 nb7 b6 nb5 0 5bit_AND
+x7 VDD net13 b9 b8 net14 nb7 nb6 b5 0 5bit_AND
+x8 VDD net15 b9 b8 net16 nb7 nb6 nb5 0 5bit_AND
+x9 VDD net17 b9 nb8 net18 b7 b6 b5 0 5bit_AND
+x2 VDD net3 b9 b8 net4 b7 b6 nb5 0 5bit_AND
+x10 VDD net19 b9 nb8 net20 b7 b6 nb5 0 5bit_AND
+x11 VDD net21 b9 nb8 net22 b7 nb6 b5 0 5bit_AND
+x12 VDD net23 b9 nb8 net24 b7 nb6 nb5 0 5bit_AND
+x13 VDD net25 b9 nb8 net26 nb7 b6 b5 0 5bit_AND
+x14 VDD net27 b9 nb8 net28 nb7 b6 nb5 0 5bit_AND
+x15 VDD net29 b9 nb8 net30 nb7 nb6 b5 0 5bit_AND
+x16 VDD net31 b9 nb8 net32 nb7 nb6 nb5 0 5bit_AND
+x17 VDD net33 nb9 b8 net34 b7 b6 b5 0 5bit_AND
+x18 VDD net35 nb9 b8 net36 b7 b6 nb5 0 5bit_AND
+x19 VDD net37 nb9 b8 net38 b7 nb6 b5 0 5bit_AND
+x20 VDD net39 nb9 b8 net40 b7 nb6 nb5 0 5bit_AND
+x21 VDD net41 nb9 b8 net42 nb7 b6 b5 0 5bit_AND
+x22 VDD net43 nb9 b8 net44 nb7 b6 nb5 0 5bit_AND
+x23 VDD net45 nb9 b8 net46 nb7 nb6 b5 0 5bit_AND
+x24 VDD net47 nb9 b8 net48 nb7 nb6 nb5 0 5bit_AND
+x25 VDD net49 nb9 nb8 net50 b7 b6 b5 0 5bit_AND
+x26 VDD net51 nb9 nb8 net52 b7 b6 nb5 0 5bit_AND
+x27 VDD net53 nb9 nb8 net54 b7 nb6 b5 0 5bit_AND
+x28 VDD net55 nb9 nb8 net56 b7 nb6 nb5 0 5bit_AND
+x29 VDD net57 nb9 nb8 net58 nb7 b6 b5 0 5bit_AND
+x30 VDD net59 nb9 nb8 net60 nb7 b6 nb5 0 5bit_AND
+x31 VDD net61 nb9 nb8 net62 nb7 nb6 b5 0 5bit_AND
+x32 VDD net63 nb9 nb8 net64 nb7 nb6 nb5 0 5bit_AND
+x33 net1 net2 pVref MSB1_out 0 Switch
+x34 net1 net2 net96 MSB2_out 0 Switch
+x35 net3 net4 net66 MSB1_out 0 Switch
+x36 net3 net4 net97 MSB2_out 0 Switch
+x37 net5 net6 net67 MSB1_out 0 Switch
+x38 net5 net6 net98 MSB2_out 0 Switch
+x39 net7 net8 net68 MSB1_out 0 Switch
+x40 net7 net8 net99 MSB2_out 0 Switch
+x41 net9 net10 net69 MSB1_out 0 Switch
+x42 net9 net10 net100 MSB2_out 0 Switch
+x43 net11 net12 net70 MSB1_out 0 Switch
+x44 net11 net12 net101 MSB2_out 0 Switch
+x45 net13 net14 net71 MSB1_out 0 Switch
+x46 net13 net14 net102 MSB2_out 0 Switch
+x47 net15 net16 net72 MSB1_out 0 Switch
+x48 net15 net16 net103 MSB2_out 0 Switch
+x49 net17 net18 net73 MSB1_out 0 Switch
+x50 net17 net18 net104 MSB2_out 0 Switch
+x51 net19 net20 net74 MSB1_out 0 Switch
+x52 net19 net20 net105 MSB2_out 0 Switch
+x53 net21 net22 net75 MSB1_out 0 Switch
+x54 net21 net22 net106 MSB2_out 0 Switch
+x55 net23 net24 net76 MSB1_out 0 Switch
+x56 net23 net24 net107 MSB2_out 0 Switch
+x57 net25 net26 net77 MSB1_out 0 Switch
+x58 net25 net26 net108 MSB2_out 0 Switch
+x59 net27 net28 net78 MSB1_out 0 Switch
+x60 net27 net28 net109 MSB2_out 0 Switch
+x61 net29 net30 net79 MSB1_out 0 Switch
+x62 net29 net30 net110 MSB2_out 0 Switch
+x63 net31 net32 net80 MSB1_out 0 Switch
+x64 net31 net32 net111 MSB2_out 0 Switch
+x65 net33 net34 net81 MSB1_out 0 Switch
+x66 net33 net34 net112 MSB2_out 0 Switch
+x67 net35 net36 net82 MSB1_out 0 Switch
+x68 net35 net36 net113 MSB2_out 0 Switch
+x69 net37 net38 net83 MSB1_out 0 Switch
+x70 net37 net38 net114 MSB2_out 0 Switch
+x71 net39 net40 net84 MSB1_out 0 Switch
+x72 net39 net40 net115 MSB2_out 0 Switch
+x73 net41 net42 net85 MSB1_out 0 Switch
+x74 net41 net42 net116 MSB2_out 0 Switch
+x75 net43 net44 net86 MSB1_out 0 Switch
+x76 net43 net44 net117 MSB2_out 0 Switch
+x77 net45 net46 net87 MSB1_out 0 Switch
+x78 net45 net46 net118 MSB2_out 0 Switch
+x79 net47 net48 net88 MSB1_out 0 Switch
+x80 net47 net48 net119 MSB2_out 0 Switch
+x81 net49 net50 net65 MSB1_out 0 Switch
+x82 net49 net50 net120 MSB2_out 0 Switch
+x83 net51 net52 net89 MSB1_out 0 Switch
+x84 net51 net52 net121 MSB2_out 0 Switch
+x85 net53 net54 net90 MSB1_out 0 Switch
+x86 net53 net54 net122 MSB2_out 0 Switch
+x87 net55 net56 net91 MSB1_out 0 Switch
+x88 net55 net56 net123 MSB2_out 0 Switch
+x89 net57 net58 net92 MSB1_out 0 Switch
+x90 net57 net58 net124 MSB2_out 0 Switch
+x91 net59 net60 net93 MSB1_out 0 Switch
+x92 net59 net60 net125 MSB2_out 0 Switch
+x93 net61 net62 net94 MSB1_out 0 Switch
+x94 net61 net62 net126 MSB2_out 0 Switch
+x95 net63 net64 net95 MSB1_out 0 Switch
+x96 net63 net64 nVref MSB2_out 0 Switch
+R1 pVref net66 1k m=1
+R2 net66 net67 1k m=1
+R3 net67 net68 1k m=1
+R4 net68 net69 1k m=1
+R5 net69 net70 1k m=1
+R6 net70 net71 1k m=1
+R7 net71 net72 1k m=1
+R8 net72 net73 1k m=1
+R9 net73 net74 1k m=1
+R10 net74 net75 1k m=1
+R11 net75 net76 1k m=1
+R12 net76 net77 1k m=1
+R13 net77 net78 1k m=1
+R14 net78 net79 1k m=1
+R15 net79 net80 1k m=1
+R16 net80 net81 1k m=1
+R17 net81 net82 1k m=1
+R18 net82 net83 1k m=1
+R19 net83 net84 1k m=1
+R20 net84 net85 1k m=1
+R21 net85 net86 1k m=1
+R22 net86 net87 1k m=1
+R23 net87 net88 1k m=1
+R24 net88 net65 1k m=1
+R25 net65 net89 1k m=1
+R26 net89 net90 1k m=1
+R27 net90 net91 1k m=1
+R28 net91 net92 1k m=1
+R29 net92 net93 1k m=1
+R30 net93 net94 1k m=1
+R31 net94 net95 1k m=1
+R32 net96 net97 1k m=1
+R33 net97 net98 1k m=1
+R34 net98 net99 1k m=1
+R35 net99 net100 1k m=1
+R36 net100 net101 1k m=1
+R37 net101 net102 1k m=1
+R38 net102 net103 1k m=1
+R39 net103 net104 1k m=1
+R40 net104 net105 1k m=1
+R41 net105 net106 1k m=1
+R42 net106 net107 1k m=1
+R43 net107 net108 1k m=1
+R44 net108 net109 1k m=1
+R45 net109 net110 1k m=1
+R46 net110 net111 1k m=1
+R47 net111 net112 1k m=1
+R48 net112 net113 1k m=1
+R49 net113 net114 1k m=1
+R50 net114 net115 1k m=1
+R51 net115 net116 1k m=1
+R52 net116 net117 1k m=1
+R53 net117 net118 1k m=1
+R54 net118 net119 1k m=1
+R55 net119 net120 1k m=1
+R56 net120 net121 1k m=1
+R57 net121 net122 1k m=1
+R58 net122 net123 1k m=1
+R59 net123 net124 1k m=1
+R60 net124 net125 1k m=1
+R61 net125 net126 1k m=1
+R62 net126 nVref 1k m=1
+*V_Bit9 b9 0 dc 0 PULSE (0 1.8 1n 1n 1n 100.4u 200.8u)
+*V_Bit8 b8 0 dc 0 PULSE (0 1.8 1n 1n 1n 51.2u 100.4u)
+*V_Bit7 b7 0 dc 0 PULSE (0 1.8 1n 1n 1n 25.6u 51.2u)
+*V_Bit6 b6 0 dc 0 PULSE (0 1.8 1n 1n 1n 12800n 25600n)
+*V_Bit5 b5 0 dc 0 PULSE (0 1.8 1n 1n 1n 6400n 12800n)
+*V_Bit4 b4 0 dc 0 PULSE (0 1.8 1n 1n 1n 3200n 6400n)
+*V_Bit3 b3 0 dc 0 PULSE (0 1.8 1n 1n 1n 1600n 3200n)
+*V_Bit2 b2 0 dc 0 PULSE (0 1.8 1n 1n 1n 800n 1600n)
+*V_Bit1 b1 0 dc 0 PULSE (0 1.8 1n 1n 1n 400n 800n)
+*V_Bit0 b0 0 dc 0 PULSE (0 1.8 1n 1n 1n 200n 400n)
+V_Bit9 b9 0 dc 0
+V_Bit8 b8 0 dc 1.8
+V_Bit7 b7 0 dc 1.8
+V_Bit6 b6 0 dc 1.8
+V_Bit5 b5 0 dc 1.8
+V_Bit4 b4 0 dc 1.8
+V_Bit3 b3 0 dc 1.8 
+V_Bit2 b2 0 dc 1.8
+V_Bit1 b1 0 dc 1.8
+V_Bit0 b0 0 dc 1.8
+
+Vp pVref 0 dc 3.3
+Vn 0 nVref dc 0
+V1 VDD 0 dc 1.8
+XM1 nb9 b9 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM2 nb9 b9 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM3 nb8 b8 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM4 nb8 b8 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM5 nb7 b7 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM6 nb7 b7 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM7 nb6 b6 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM8 nb6 b6 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM9 nb5 b5 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM10 nb5 b5 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM11 nb4 b4 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM12 nb4 b4 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM13 nb3 b3 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM14 nb3 b3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM15 nb2 b2 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM16 nb2 b2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM17 nb1 b1 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM18 nb1 b1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM19 nb0 b0 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM20 nb0 b0 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+R63 MSB1_out net150 31.25 m=1
+R64 net150 net149 31.25 m=1
+R65 net149 net148 31.25 m=1
+R66 net148 net147 31.25 m=1
+R67 net147 net146 31.25 m=1
+R68 net146 net145 31.25 m=1
+R69 net145 net144 31.25 m=1
+R70 net144 net143 31.25 m=1
+R71 net143 net142 31.25 m=1
+R72 net142 net141 31.25 m=1
+R73 net141 net140 31.25 m=1
+R74 net140 net139 31.25 m=1
+R75 net139 net138 31.25 m=1
+R76 net138 net137 31.25 m=1
+R77 net137 net136 31.25 m=1
+R78 net136 net135 31.25 m=1
+R79 net135 net134 31.25 m=1
+R80 net134 net133 31.25 m=1
+R81 net133 net132 31.25 m=1
+R82 net132 net131 31.25 m=1
+R83 net131 net130 31.25 m=1
+R84 net130 net129 31.25 m=1
+R85 net129 net128 31.25 m=1
+R86 net128 net127 31.25 m=1
+R87 net127 net151 31.25 m=1
+R88 net151 net152 31.25 m=1
+R89 net152 net153 31.25 m=1
+R90 net153 net154 31.25 m=1
+R91 net154 net155 31.25 m=1
+R92 net155 net156 31.25 m=1
+R93 net156 net157 31.25 m=1
+R94 net157 MSB2_out 31.25 m=1
+x97 VDD b4 b3 net150 b2 Out b1 0 b0 Switch_and_5Bit_AND
+x98 VDD b4 b3 net149 b2 Out b1 0 nb0 Switch_and_5Bit_AND
+x99 VDD b4 b3 net148 b2 Out nb1 0 b0 Switch_and_5Bit_AND
+x100 VDD b4 b3 net147 b2 Out nb1 0 nb0 Switch_and_5Bit_AND
+x101 VDD b4 b3 net146 nb2 Out b1 0 b0 Switch_and_5Bit_AND
+x102 VDD b4 b3 net145 nb2 Out b1 0 nb0 Switch_and_5Bit_AND
+x103 VDD b4 b3 net144 nb2 Out nb1 0 b0 Switch_and_5Bit_AND
+x104 VDD b4 b3 net143 nb2 Out nb1 0 nb0 Switch_and_5Bit_AND
+x105 VDD b4 nb3 net142 b2 Out b1 0 b0 Switch_and_5Bit_AND
+x106 VDD b4 nb3 net141 b2 Out b1 0 nb0 Switch_and_5Bit_AND
+x107 VDD b4 nb3 net140 b2 Out nb1 0 b0 Switch_and_5Bit_AND
+x108 VDD b4 nb3 net139 b2 Out nb1 0 nb0 Switch_and_5Bit_AND
+x109 VDD b4 nb3 net138 nb2 Out b1 0 b0 Switch_and_5Bit_AND
+x110 VDD b4 nb3 net137 nb2 Out b1 0 nb0 Switch_and_5Bit_AND
+x111 VDD b4 nb3 net136 nb2 Out nb1 0 b0 Switch_and_5Bit_AND
+x112 VDD b4 nb3 net135 nb2 Out nb1 0 nb0 Switch_and_5Bit_AND
+x113 VDD nb4 b3 net134 b2 Out b1 0 b0 Switch_and_5Bit_AND
+x114 VDD nb4 b3 net133 b2 Out b1 0 nb0 Switch_and_5Bit_AND
+x115 VDD nb4 b3 net132 b2 Out nb1 0 b0 Switch_and_5Bit_AND
+x116 VDD nb4 b3 net131 b2 Out nb1 0 nb0 Switch_and_5Bit_AND
+x117 VDD nb4 b3 net130 nb2 Out b1 0 b0 Switch_and_5Bit_AND
+x118 VDD nb4 b3 net129 nb2 Out b1 0 nb0 Switch_and_5Bit_AND
+x119 VDD nb4 b3 net128 nb2 Out nb1 0 b0 Switch_and_5Bit_AND
+x120 VDD nb4 b3 net127 nb2 Out nb1 0 nb0 Switch_and_5Bit_AND
+x121 VDD nb4 nb3 net151 b2 Out b1 0 b0 Switch_and_5Bit_AND
+x122 VDD nb4 nb3 net152 b2 Out b1 0 nb0 Switch_and_5Bit_AND
+x123 VDD nb4 nb3 net153 b2 Out nb1 0 b0 Switch_and_5Bit_AND
+x124 VDD nb4 nb3 net154 b2 Out nb1 0 nb0 Switch_and_5Bit_AND
+x125 VDD nb4 nb3 net155 nb2 Out b1 0 b0 Switch_and_5Bit_AND
+x126 VDD nb4 nb3 net156 nb2 Out b1 0 nb0 Switch_and_5Bit_AND
+x127 VDD nb4 nb3 net157 nb2 Out nb1 0 b0 Switch_and_5Bit_AND
+x128 VDD nb4 nb3 MSB2_out nb2 Out nb1 0 nb0 Switch_and_5Bit_AND
+**.ends
+
+* expanding   symbol:  /home/shalini1234/Project/5bit_AND.sym # of pins=9
+
+.subckt 5bit_AND  VDD inv_CS_out Bit_5 Bit_4 CS_out Bit_3 Bit_2 Bit_1 0
+*.ipin Bit_1
+*.ipin Bit_3
+*.ipin Bit_2
+*.ipin Bit_4
+*.ipin Bit_5
+*.iopin inv_CS_out
+*.iopin CS_out
+*.iopin VDD
+*.iopin 0
+XM1 inv_CS_out Bit_5 net1 net1 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM2 net1 Bit_4 net2 net2 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM3 net2 Bit_3 net3 net3 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM4 net3 Bit_2 net4 net4 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM5 net4 Bit_1 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM6 inv_CS_out Bit_3 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM7 inv_CS_out Bit_2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM8 inv_CS_out Bit_1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM9 inv_CS_out Bit_4 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+XM10 inv_CS_out Bit_5 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1
+XM11 CS_out inv_CS_out 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM12 CS_out inv_CS_out VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 
+.ends
+
+
+* expanding   symbol:  /home/shalini1234/Project/Switch.sym # of pins=5
+
+.subckt Switch  inv_CS CS Switch_in Switch_out 0
+*.iopin Switch_in
+*.iopin Switch_out
+*.iopin CS
+*.iopin inv_CS
+*.iopin 0
+XM1 Switch_in CS Switch_out Switch_out sky130_fd_pr__nfet_01v8 L=0.15 W=1 
+XM2 Switch_out inv_CS Switch_in Switch_in sky130_fd_pr__pfet_01v8 L=0.15 W=1
+XM5 Switch_out inv_CS 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1
+.ends
+
+
+* expanding   symbol:  /home/shalini1234/Project/Switch_and_5Bit_AND.sym # of pins=9
+
+.subckt Switch_and_5Bit_AND  VDD Bit_5 Bit_4 Switch_in Bit_3 Switch_out Bit_2 0 Bit_1
+*.ipin Bit_5
+*.ipin Bit_4
+*.ipin Bit_3
+*.ipin Bit_2
+*.ipin Bit_1
+*.iopin Switch_in
+*.iopin Switch_out
+*.iopin 0
+*.iopin VDD
+x2 VDD net1 Bit_5 Bit_4 net2 Bit_3 Bit_2 Bit_1 0 5bit_AND
+x1 net1 net2 Switch_in Switch_out 0 Switch
+.ends
+
+
+.tran 0.1n 2u
+.control
+run 
+plot b9 b8 b7 b6 b5
+plot b4 b3 b2 b1 b0
+plot pVref
+plot nVref
+plot MSB1_out
+plot MSB2_out
+plot Vdd
+plot out
+.endc
+.end
+
