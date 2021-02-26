@@ -91,7 +91,8 @@ To see this waveform run Sim_Switch_pulse_5Bit_AND_final.spice file
 ![10Bit DAC Desing](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/10bitDAC/10Bit_DAC%20design.png)
 
 
-To test this design 10Bit_DAC_design_1_vref_3.3.spice file can be excecuted
+To test this design 10Bit_DAC_design_1_vref_3.3.spice file can be excecuted.
+
 The challenge in this DAC design was to obtain the required voltage level. The practical implementation and simulation [resulted in lower voltage levels](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/spicefiles/output_msbr1_lsbr32).
 
 <!--![2 stage potentiometric DAC](https://user-images.githubusercontent.com/73480418/109258230-da52f880-77c7-11eb-9be6-f4f74b83ac5e.PNG)-->
