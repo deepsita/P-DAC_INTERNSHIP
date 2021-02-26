@@ -179,14 +179,18 @@ o	Clone the git repo with following command
 
 
 o	The conventional design Spice files are in the path P-DAC_INTERNSHIP/10Bit_Potentiometeric_DAC_Conventional_Design/spicefiles/
-
+o	The new proposed design Spice files are in the path P-DAC_INTERNSHIP/ProjectDesigns/spicefiles/
 
 o	The libraries are given the folder P-DAC_INTERNSHIP/sky130_fd_pr/
 
 
-o	Command to execute .Spice files for pre-layout simulations
+o	Command to simulate .Spice files of conventional design
 
     ngspice P-DAC_INTERNSHIP/10Bit_Potentiometeric_DAC_Conventional_Design/spicefiles/<Designname.spice>  
+    
+o	Command to simulate .Spice files of new proposed design
+
+    ngspice P-DAC_INTERNSHIP/ProjectDesigns/spicefiles/<Designname.spice>  
 
 
 ## 8.Future Works
