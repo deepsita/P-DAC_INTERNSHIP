@@ -1,5 +1,5 @@
 
-.lib "/sky130_fd_pr/models/custom_1.spice"
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
 
 XM1 dinb din 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=1.8 
 XM2 dinb din vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=1.8
