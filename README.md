@@ -186,7 +186,7 @@ The ngspice gives a message killed after running for long hours. To mitigate thi
 The ngspice gives a message killed after running for long hours. To mitigate this new model files were used so that only the model files that are required can be used. However, the ngspice is getting killed.
 
 
-Every block of the circuit until 8 bit DAC are tested and spice models until 10 bit dac are included in specified folders.
+Every block of the circuit until 8 bit DAC are tested and spice models until 10 bit dac are included in [specified folders](https://github.com/deepsita/P-DAC_INTERNSHIP/tree/main/10Bit_Potentiometeric_DAC_Conventional_Design/spicefiles).
 
 ## 7.Instructions to get started with the design
 #### Pre-layout Simulation commands
@@ -196,10 +196,12 @@ o	Clone the git repo with following command
 
 
 o	The conventional design Spice files are in the path P-DAC_INTERNSHIP/10Bit_Potentiometeric_DAC_Conventional_Design/spicefiles/
+
 o	The new proposed design Spice files are in the path P-DAC_INTERNSHIP/ProjectDesigns/spicefiles/
 
 o	The libraries are given the folder P-DAC_INTERNSHIP/sky130_fd_pr/
 
+o   Open the terminal from the cloned folder
 
 o	Command to simulate .Spice files of conventional design
 
