@@ -148,16 +148,31 @@ The ngspice gives a message killed after searching for the models for long hours
 
 Every block of the circuit until 8 bit DAC are tested and spice models until 10 bit dac are included are in the folder spicefiles.
 
-## Future Works
+## 7.Instructions to get started with the design
+#### Pre-layout Simulation commands
+o	How to clone
+
+o	Path to access the cloned .spice files
+
+
+o	How to copy .Spice files from cloned path to sky130_pd_fr/models path
+
+o	In Which path .Spice files should be executed in terminal
+
+
+o	Command to execute .Spice files for pre-layout simulations
+
+    ngspice <Designname.spice> custom.spice 
+
+
+## 8.Future Works
 Conventional 9Bit and 10Bit simulations will be updated.
 Layout of 10Bit Potentiometer DAC.
 The design for the new implementation can be modify and the results for both designs can be compared
 
 
-## Contributors
+## 9.Contributors
 
 Skandha Deepsita - skandha.deepsita5@gmail.com
-
 Shalini Kanna - kannashalini97@gmail.com
-
 Harshitha Basavaraju - harshithab0707@gmail.com
