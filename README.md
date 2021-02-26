@@ -63,9 +63,10 @@ So, the proposed design could be an efficient alternative for Higher bit DACs an
 
 The complete design of the proposed DAC is given in the [proposed_dac.pdf](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/proposed_dac.pdf). 
 
+### Designs and waveforms
 
-Switch Output
-![switch_new_output](https://user-images.githubusercontent.com/25682001/109332106-af2ddf00-7883-11eb-91bc-bffe24174fa8.png)
+Combined Output
+![combined desing_output](https://user-images.githubusercontent.com/25682001/109332106-af2ddf00-7883-11eb-91bc-bffe24174fa8.png)
 
 
 
