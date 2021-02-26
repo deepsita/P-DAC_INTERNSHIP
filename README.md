@@ -174,21 +174,20 @@ Every block of the circuit until 8 bit DAC are tested and spice models until 10 
 
 ## 7.Instructions to get started with the design
 #### Pre-layout Simulation commands
-o	How to clone
+o	Clone the git repo with following command
+
+        git clone  https://github.com/deepsita/P-DAC_INTERNSHIP.git
 
 
-o	Path to access the cloned .spice files
+o	The conventional design Spice files are in the path P-DAC_INTERNSHIP/10Bit_Potentiometeric_DAC_Conventional_Design/spicefiles/
 
 
-o	How to copy .Spice files from cloned path to sky130_pd_fr/models path
-
-
-o	In Which path .Spice files should be executed in terminal
+o	The libraries are given the folder P-DAC_INTERNSHIP/sky130_fd_pr/
 
 
 o	Command to execute .Spice files for pre-layout simulations
 
-    ngspice <Designname.spice> custom.spice 
+    ngspice P-DAC_INTERNSHIP/10Bit_Potentiometeric_DAC_Conventional_Design/spicefiles/<Designname.spice>  
 
 
 ## 8.Future Works
