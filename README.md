@@ -82,8 +82,8 @@ Switch design implementation is shown below
 
 ![Switch Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/switch.PNG)
 
-<!--To see the waveform for this design run my_2bitdac.spice file-->
 
+To see this waveform run switch.spice file
 
 #### *2-Bit DAC design and simulation:*
 
@@ -153,24 +153,23 @@ To see this waveform run my_7bitdac.spice file
 
 ![8Bit DAC WaveForm](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/8bitdac_wave.PNG)
 
-The ngspice gives a message killed after searching for the models for long hours. To mitigate this new model files were used so that only the model files that are required can be used. The simulation takes 4 hours for the completion.
-
+The ngspice gi
 
 #### *9-Bit DAC design:*
 9Bit DAC is implemented using 2 8-Bit DACs and 1 switch instances. 9-Bit circuitry is shown bellow
 
 ![9Bit DAC Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/9bit_sch.PNG)
-The ngspice gives a message killed after searching for the models for long hours. To mitigate this new model files were used so that only the model files that are required can be used. However, the ngspice is getting killed.
+The ngspice gives a message killed after running for long hours. To mitigate this new model files were used so that only the model files that are required can be used. However, the ngspice is getting killed.
 
 
 #### *10-Bit DAC design:*
 10Bit DAC is implemented using 2 9-Bit DACs and 1 switch instances. 10-Bit circuitry is shown bellow
 
 ![10Bit DAC Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/10bitdac_sch.PNG)
-The ngspice gives a message killed after searching for the models for long hours. To mitigate this new model files were used so that only the model files that are required can be used. However, the ngspice is getting killed while it searches for the the model file.
+The ngspice gives a message killed after running for long hours. To mitigate this new model files were used so that only the model files that are required can be used. However, the ngspice is getting killed.
 
 
-Every block of the circuit until 8 bit DAC are tested and spice models until 10 bit dac are included are in the folder spicefiles.
+Every block of the circuit until 8 bit DAC are tested and spice models until 10 bit dac are included in specified folders.
 
 ## 7.Instructions to get started with the design
 #### Pre-layout Simulation commands
