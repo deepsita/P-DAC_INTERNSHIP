@@ -75,74 +75,95 @@ The basic idea is to divide the voltage into N different voltage values in the r
 *Basic Architecture of Potentiometric DAC*
 
 ## 6.Pre-layout Designs and Simulations (Conventional Implementation)
-#### Switch
+#### *Switch Design*
 
-Switch Implementation, Design and waveform are shown bellow
+Switch design implementation is shown below 
+
 ![Switch Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/switch.PNG)
 
-2Bit DAC Implementation using Switch instances, Design and waveform are shown bellow
+To see the waveform for this design run my_2bitdac.spice file
+
+
+#### *2-Bit DAC design and simulation:*
+
+2Bit DAC is implemented using 3 switch instances. 2-Bit circuitry and waveform are shown bellow
+
 
 ![2Bit DAC Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/2bitdac_sch.PNG)
 
 ![2Bit DAC WaveForm](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/2bitdac.PNG)
 
+To see this waveform run my_2bitdac.spice file
 
-3Bit DAC Implementation using 2Bit instances, Design and waveform are shown bellow
+#### *3-Bit DAC design and simulation:*
+
+3Bit DAC is implemented using 2 2-Bit DACs and 1 switch instances. 3-Bit circuitry and waveform are shown bellow
 
 ![3Bit DAC Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/3bitdac_sch.PNG)
 
 ![3Bit DAC WaveForm](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/3bitdac.PNG)
 
+To see this waveform run my_3bitdac.spice file
 
+#### *4-Bit DAC design and simulation:*
 
-4Bit DAC Implementation using 3Bit instances, Design and waveform are shown bellow
+4Bit DAC is implemented using 2 3-Bit DACs and 1 switch instances. 4-Bit circuitry and waveform are shown bellow
 
 ![4Bit DAC Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/4bitdac_sch.PNG)
 
 ![4Bit DAC WaveForm](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/4bitdac.PNG)
 
+To see this waveform run my_4bitdac.spice file
 
+#### *5-Bit DAC design and simulation:*
 
-5Bit DAC Implementation using 4Bit instances, Design and waveform are shown bellow
+5Bit DAC is implemented using 2 4-Bit DACs and 1 switch instances. 5-Bit circuitry and waveform are shown bellow
 
 ![5Bit DAC Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/5bitdac_sch.PNG)
 
 ![5Bit DAC WaveForm](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/5bitdac_waveforms_lvt_devices.PNG)
 
+To see this waveform run my_5bitdac.spice file
 
+#### *6-Bit DAC design and simulation:*
 
-6Bit DAC Implementation using 5Bit instances, Design and waveform are shown bellow
+6Bit DAC is implemented using 2 5-Bit DACs and 1 switch instances. 6-Bit circuitry and waveform are shown bellow
 
 ![6Bit DAC Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/6bitdac_sch.PNG)
 
 ![6Bit DAC WaveForm](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/6bit_waveforms.PNG)
 
+To see this waveform run my_6bitdac.spice file
 
+#### *7-Bit DAC design and simulation:*
 
-7Bit DAC Implementation using 6Bit instances, Design and waveform are shown bellow
-
+7Bit DAC is implemented using 2 6-Bit DACs and 1 switch instances. 7-Bit circuitry and waveform are shown bellow
 ![7Bit DAC Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/7bit_sch.PNG)
 
 ![7Bit DAC WaveForm](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/7bitdac_waveforms.PNG)
 
+To see this waveform run my_7bitdac.spice file
 
+#### *8-Bit DAC design and simulation:*
 
-8Bit DAC Implementation using 7Bit instances, Design and waveform are shown bellow
+8Bit DAC is implemented using 2 7-Bit DACs and 1 switch instances. 8-Bit circuitry and waveform are shown bellow
 
 ![8Bit DAC Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/8bitdac_sch.PNG)
 
 ![8Bit DAC WaveForm](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/8bitdac_wave.PNG)
+
 The ngspice gives a message killed after searching for the models for long hours. To mitigate this new model files were used so that only the model files that are required can be used. The simulation takes 4 hours for the completion.
 
 
-
-9Bit DAC Implementation using 8Bit instances, Design shown bellow (Waveform - Simulations are taking time)
+#### *9-Bit DAC design:*
+9Bit DAC is implemented using 2 8-Bit DACs and 1 switch instances. 9-Bit circuitry is shown bellow
 
 ![9Bit DAC Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/9bit_sch.PNG)
 The ngspice gives a message killed after searching for the models for long hours. To mitigate this new model files were used so that only the model files that are required can be used. However, the ngspice is getting killed.
 
 
-10Bit DAC Implementation using 9Bit instances, Design shown bellow (Waveform - Simulations are taking time)
+#### *10-Bit DAC design:*
+10Bit DAC is implemented using 2 9-Bit DACs and 1 switch instances. 10-Bit circuitry is shown bellow
 
 ![10Bit DAC Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/10bitdac_sch.PNG)
 The ngspice gives a message killed after searching for the models for long hours. To mitigate this new model files were used so that only the model files that are required can be used. However, the ngspice is getting killed while it searches for the the model file.
