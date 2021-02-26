@@ -65,10 +65,12 @@ So, the proposed design could be an efficient alternative for Higher bit DACs an
 The complete design of the proposed DAC is given in the [proposed_dac.pdf](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/proposed_dac.pdf)
 
 ![2 stage potentiometric DAC](https://user-images.githubusercontent.com/73480418/109258230-da52f880-77c7-11eb-9be6-f4f74b83ac5e.PNG)
+
 *Basic Design of new DAC implementation*
 
 ## 5.Conventional Implementation of 10Bit Potentiometeric DAC
 The basic idea is to divide the voltage into N different voltage values in the range of VREFH and VREFL- for an N-Bit DAC. The design used here to achieve this is the simple resistor string DAC which consists of resistors in series. These resistors are then connected to various switches in such a fashion that it routes the exact voltage to the output. The problem of the largeness of the circuit is reduced by building hierarchical subcircuits of 10-Bit potentiometric DAC – Switch, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, 7-bit, 8-bit, 9-bit and 10-bit.
+
 
 *Basic Architecture of Potentiometric DAC*
 
@@ -152,10 +154,12 @@ Every block of the circuit until 8 bit DAC are tested and spice models until 10 
 #### Pre-layout Simulation commands
 o	How to clone
 
+
 o	Path to access the cloned .spice files
 
 
 o	How to copy .Spice files from cloned path to sky130_pd_fr/models path
+
 
 o	In Which path .Spice files should be executed in terminal
 
@@ -174,5 +178,7 @@ The design for the new implementation can be modify and the results for both des
 ## 9.Contributors
 
 Skandha Deepsita - skandha.deepsita5@gmail.com
+
 Shalini Kanna - kannashalini97@gmail.com
+
 Harshitha Basavaraju - harshithab0707@gmail.com
