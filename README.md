@@ -65,7 +65,7 @@ The complete design of the proposed DAC is given in the [proposed_dac.pdf](https
 
 
 Switch Output
-![Screenshot from 2021-02-18 20-55-38](https://user-images.githubusercontent.com/25682001/109331801-4d6d7500-7883-11eb-93aa-0cc7e84543c8.png)
+![switch_new_output](https://user-images.githubusercontent.com/25682001/109332106-af2ddf00-7883-11eb-91bc-bffe24174fa8.png)
 
 
 
