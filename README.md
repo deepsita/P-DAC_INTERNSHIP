@@ -99,6 +99,7 @@ Switch design implementation is shown below
 ![Switch Design](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/switch.PNG)
 
 
+![Switch waveform](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/switch_outputfinal.png)
 To see this waveform run switch.spice file
 
 #### *2-Bit DAC design and simulation:*
@@ -169,7 +170,7 @@ To see this waveform run my_7bitdac.spice file
 
 ![8Bit DAC WaveForm](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/10Bit_Potentiometeric_DAC_Conventional_Design/Schematic_And_Waveform_Images/8bitdac_wave.PNG)
 
-The ngspice gi
+To see this waveform run my_8bit.spice file
 
 #### *9-Bit DAC design:*
 9Bit DAC is implemented using 2 8-Bit DACs and 1 switch instances. 9-Bit circuitry is shown bellow
