@@ -205,11 +205,11 @@ o   Open the terminal from the cloned folder
 
 o	Command to simulate .Spice files of conventional design
 
-    ngspice P-DAC_INTERNSHIP/10Bit_Potentiometeric_DAC_Conventional_Design/spicefiles/<Designname.spice>  
+    ngspice 10Bit_Potentiometeric_DAC_Conventional_Design/spicefiles/<Designname.spice>  
     
 o	Command to simulate .Spice files of new proposed design
 
-    ngspice P-DAC_INTERNSHIP/ProjectDesigns/spicefiles/<Designname.spice>  
+    ngspice ProjectDesigns/spicefiles/<Designname.spice>  
 
 
 ## 8.Future Works
