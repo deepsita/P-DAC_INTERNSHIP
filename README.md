@@ -59,7 +59,6 @@ The novel design for 10bit DAC with reduced number of resistors and switches is 
 The conventional DAC has 1024 resistors, but the proposed DAC requires only 94 resistors.
 The conventional DAC has 1024 swithces, but the proposed DAC requires only 96 switches.
 For whole design, we will use 1172 transistors. 
-However, the FSV is same  as the conventional DAC.
 So, the proposed design could be an efficient alternative for Higher bit DACs and this 10-Bit Potentiometric implementation designs can be found [here](https://github.com/deepsita/P-DAC_INTERNSHIP/tree/main/ProjectDesigns).
 
 The complete design of the proposed DAC is given in the [proposed_dac.pdf](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/proposed_dac.pdf)
@@ -67,7 +66,7 @@ The complete design of the proposed DAC is given in the [proposed_dac.pdf](https
 ![2 stage potentiometric DAC](https://user-images.githubusercontent.com/73480418/109258230-da52f880-77c7-11eb-9be6-f4f74b83ac5e.PNG)
 
 *Basic Design of new DAC implementation*
-
+The challenge in this DAC design was to ibtain the required voltage level. The practical implementation and simulation resulted in lower voltage levels. 
 ## 5.Conventional Implementation of 10Bit Potentiometeric DAC
 The basic idea is to divide the voltage into N different voltage values in the range of VREFH and VREFL- for an N-Bit DAC. The design used here to achieve this is the simple resistor string DAC which consists of resistors in series. These resistors are then connected to various switches in such a fashion that it routes the exact voltage to the output. The problem of the largeness of the circuit is reduced by building hierarchical subcircuits of 10-Bit potentiometric DAC – Switch, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, 7-bit, 8-bit, 9-bit and 10-bit.
 
