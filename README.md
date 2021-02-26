@@ -61,7 +61,23 @@ The conventional DAC has 1024 swithces, but the proposed DAC requires only 96 sw
 For whole design, we will use 1172 transistors. 
 So, the proposed design could be an efficient alternative for Higher bit DACs and this 10-Bit Potentiometric implementation designs can be found [here](https://github.com/deepsita/P-DAC_INTERNSHIP/tree/main/ProjectDesigns).
 
-The complete design of the proposed DAC is given in the [proposed_dac.pdf](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/proposed_dac.pdf). The challenge in this DAC design was to obtain the required voltage level. The practical implementation and simulation resulted in lower voltage levels.
+The complete design of the proposed DAC is given in the [proposed_dac.pdf](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/proposed_dac.pdf). 
+
+
+Switch Output
+![Screenshot from 2021-02-18 20-55-38](https://user-images.githubusercontent.com/25682001/109331801-4d6d7500-7883-11eb-93aa-0cc7e84543c8.png)
+
+
+
+
+
+
+
+
+
+
+
+The challenge in this DAC design was to obtain the required voltage level. The practical implementation and simulation resulted in lower voltage levels.
 
 <!--![2 stage potentiometric DAC](https://user-images.githubusercontent.com/73480418/109258230-da52f880-77c7-11eb-9be6-f4f74b83ac5e.PNG)-->
 
