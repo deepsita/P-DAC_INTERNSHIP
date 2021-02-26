@@ -64,18 +64,31 @@ So, the proposed design could be an efficient alternative for Higher bit DACs an
 The complete design of the proposed DAC is given in the [proposed_dac.pdf](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/proposed_dac.pdf). 
 
 ### Designs and waveforms
+*Switch Design and its waveform*
+![Switch Circuit](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/Switch/Switch%20Circuit.png)
 
-Combined Output
-![combined desing_output](https://user-images.githubusercontent.com/25682001/109332106-af2ddf00-7883-11eb-91bc-bffe24174fa8.png)
+![Switch Waveform](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/Switch/Switch_new_1.png)
+
+To see this waveform run Switch_new_1.spice file
+
+*5Bit AND gate Design and its waveform*
+![5Bit AND gate Waveform](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/5BitAND/5Bit%20AND%20Circuit.png)
+
+![5Bit AND gate Waveform](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/5BitAND/Sim_5bitAND_sym.png)
+
+To see this waveform run Sim_5bitAND_sym.spice file
+
+*Switch and 5Bit AND gate Design and its waveform*
+![Switch and 5bit AND gate circuit](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/Switch_and_5BITAND/Switch_and_5Bit_AND%20circuit.png)
 
 
+![Switch and 5Bit AND gate Waveform](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/Switch_and_5BITAND/Sim_Switch_plus_5bit_AND_final.png)
 
+To see this waveform run Sim_Switch_pulse_5Bit_AND_final.spice file
 
+*10Bit DAC Design*
 
-
-
-
-
+![10Bit DAC Desing](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/10bitDAC/10Bit_DAC%20design.png)
 
 
 The challenge in this DAC design was to obtain the required voltage level. The practical implementation and simulation [resulted in lower voltage levels](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/spicefiles/output_msbr1_lsbr32).
@@ -88,10 +101,10 @@ The challenge in this DAC design was to obtain the required voltage level. The p
 ## 5.Conventional Implementation of 10Bit Potentiometeric DAC
 The basic idea is to divide the voltage into N different voltage values in the range of VREFH and VREFL- for an N-Bit DAC. The design used here to achieve this is the simple resistor string DAC which consists of resistors in series. These resistors are then connected to various switches in such a fashion that it routes the exact voltage to the output. The problem of the largeness of the circuit is reduced by building hierarchical subcircuits of 10-Bit potentiometric DAC – Switch, 2-bit, 3-bit, 4-bit, 5-bit, 6-bit, 7-bit, 8-bit, 9-bit and 10-bit.
 
-<!--![Conventional DAC](https://user-images.githubusercontent.com/73480418/109262054-e2fafd00-77ce-11eb-91ad-d75cca9803a2.png)-->
+![Conventional DAC](https://user-images.githubusercontent.com/73480418/109262054-e2fafd00-77ce-11eb-91ad-d75cca9803a2.png)
 
 
-<!-- Basic Architecture of Potentiometric DAC*-->
+*Basic Architecture of Potentiometric DAC*
 ## 6.Pre-layout Designs and Simulations (Conventional Implementation)
 #### *Switch Design*
 
