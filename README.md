@@ -208,6 +208,7 @@ Every block of the circuit until 8 bit DAC are tested and spice models until 10 
 ## 7.Instructions to get started with the design
 # Spice simulation speed improvement
  Ngspice provides multithreading options to improve the simulation time. To enable multithreading following steps are to be followed:
+
  o Install ngspice from tarball
  
  o `sudo apt-get install -y autoconf`
