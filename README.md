@@ -206,6 +206,27 @@ The my_10bitdac.spice spice file can be excecuted to test.
 Every block of the circuit until 8 bit DAC are tested and spice models until 10 bit dac are included in [specified folders](https://github.com/deepsita/P-DAC_INTERNSHIP/tree/main/10Bit_Potentiometeric_DAC_Conventional_Design/spicefiles).
 
 ## 7.Instructions to get started with the design
+# Spice simulation speed improvement
+ Ngspice provides multithreading options to improve the simulation time. To enable multithreading following steps are to be followed:
+ o Install ngspice from tarball
+ 
+ o `sudo apt-get install -y autoconf`
+
+ o `sudo apt-get install -y libtool`
+ o `tar -zxvf ngspice`
+ o `cd ngspice`
+ o `./autogen.sh`
+ o `./configure --enable-xspice --enable-openmp --disable-debug --with-readline=yes`
+ o `make clean`
+ o `make`
+ o `sudo make install`
+  
+  Then in the netlist's control section, add the following:
+  `set num_threads=4` (or more)
+
+![Multithreading](https://user-images.githubusercontent.com/73480418/110157539-46c88b80-7db6-11eb-894d-096e770abd39.PNG)
+
+However, multithreading option is effective if the major part of the circuit are MOSFETs (BSIM 3V8 or BSIM4V5),since the DAC consits of more number of resistors, multithreading option was not helpful to increase the simulation speed.
 #### Pre-layout Simulation commands
 o	Clone the git repo with following command
 
