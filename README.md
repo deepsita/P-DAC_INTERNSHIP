@@ -213,12 +213,19 @@ Every block of the circuit until 8 bit DAC are tested and spice models until 10 
  o `sudo apt-get install -y autoconf`
 
  o `sudo apt-get install -y libtool`
+ 
  o `tar -zxvf ngspice`
+ 
  o `cd ngspice`
+ 
  o `./autogen.sh`
+ 
  o `./configure --enable-xspice --enable-openmp --disable-debug --with-readline=yes`
+ 
  o `make clean`
+ 
  o `make`
+ 
  o `sudo make install`
   
   Then in the netlist's control section, add the following:
