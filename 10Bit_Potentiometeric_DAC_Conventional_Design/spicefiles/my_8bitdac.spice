@@ -3,7 +3,7 @@
 
 
 *Including sky130 library files
-.lib "10Bit_Potentiometeric_DAC_Conventional_Design/sky130_fd_pr/models/sky130.lib.spice" tt
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
 
 .options wnflag=1
 
