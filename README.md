@@ -267,11 +267,15 @@ o	The new proposed design Spice files are in the path P-DAC_INTERNSHIP/ProjectDe
 
 o	The libraries are given the folder P-DAC_INTERNSHIP/sky130_fd_pr/
 
-o   Open the terminal from the cloned folder
+o   Open the terminal from the cloned folder or run bellow command after cloning whilw in the same path
+    
+    cd P-DAC_INTERNSHIP/ 
 
 o	Command to simulate .Spice files of conventional design
 
-    ngspice 10Bit_Potentiometeric_DAC_Conventional_Design/spicefiles/<Designname.spice>  
+    cd 10Bit_Potentiometeric_DAC_Conventional_Design/spicefiles/
+   
+    ngspice <Designname.spice>  
     
 o	Command to simulate .Spice files of new proposed design
 
