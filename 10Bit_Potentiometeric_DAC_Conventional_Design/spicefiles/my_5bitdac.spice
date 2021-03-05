@@ -30,7 +30,7 @@ V8 x1_d4 0 PULSE 0 1.8 0 100p 100p 80n 160n
 *.ipin d3
 R1 x1_vref5 x2_vref1 250 
 x3 x1_out_v vdd out_v d4 gnda x2_out_v TG2
-x1 inp1 x1_ref5 vdd gnda d0 d3 d1 x1_out_v d2 4bitdac
+x1 inp1 x1_vref5 vdd gnda d0 d3 d1 x1_out_v d2 4bitdac
 x2 x2_vref1 inp2 vdd gnda d0 d3 d1 x2_out_v d2 4bitdac
 .ends
 
