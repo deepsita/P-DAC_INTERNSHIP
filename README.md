@@ -82,16 +82,16 @@ The complete design of the proposed DAC is given in the [proposed_dac.pdf](https
 
 ### Designs and waveforms
 *Switch Design and its waveform*
-![Switch Circuit](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/Switch/Switch%20Circuit.png | width=100)
+![Switch Circuit](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/Switch/Switch%20Circuit.png)
 
-![Switch Waveform](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/Switch/Switch_new_1.png | width=100)
+![Switch Waveform](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/Switch/Switch_new_1.png)
 
 To see this waveform run `Switch_new_1.spice` file
 
 *5Bit AND gate Design and its waveform*
-![5Bit AND gate Waveform](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/5BitAND/5Bit%20AND%20Circuit.png | width=100)
+![5Bit AND gate Waveform](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/5BitAND/5Bit%20AND%20Circuit.png)
 
-![5Bit AND gate Waveform](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/5BitAND/Sim_5bitAND_sym.png | width=100)
+![5Bit AND gate Waveform](https://github.com/deepsita/P-DAC_INTERNSHIP/blob/main/ProjectDesigns/5BitAND/Sim_5bitAND_sym.png)
 
 To see this waveform run `Sim_5bitAND_sym.spice` file
 
