@@ -1,5 +1,0 @@
-* SPICE3 file created from resistor_np.ext - technology: sky130A
-
-.option scale=10000u
-
-R0 a_n3_n52# a_648_n50# sky130_fd_pr__res_generic_po w=99 l=550
